@@ -3,9 +3,14 @@
     src: url("../fonts/HELVET10.TTF");
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
  *  {
-box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'Helvetica Neue', sans-serif;
+    overflow: hidden;
 }
 
 .centro{
@@ -32,4 +37,25 @@ box-sizing: border-box;
 
 .textoBienvenida p{
     font-size: 25px;
+}
+.flechaAProyectos{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    transition: .3s all;
+
+}
+.flechaAProyectos:hover{
+    transform: scale(1.3);
+    transition: .3s all;
+}
+
+.rrss a{
+    font-size: 18px;
+    color: #adadad;
+}
+
+.verProyectos{
+    font-size: 30px;
 }

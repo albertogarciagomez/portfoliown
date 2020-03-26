@@ -10,7 +10,14 @@
  *  {
     box-sizing: border-box;
     font-family: 'Helvetica Neue', sans-serif;
-    overflow: hidden;
+}
+
+@media(min-width:768px){
+    
+    *{
+        overflow: hidden;
+    }
+
 }
 
 .centro{

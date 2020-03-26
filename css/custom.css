@@ -58,7 +58,7 @@
 
 .flechaAProyectos{
     position: absolute;
-    bottom: 20px;
+    bottom: 5vh;
     left: 0;
     right: 0;
     transition: .3s all;
@@ -73,8 +73,12 @@
 }
 .flechaABienvenida{
     position: absolute;
-    top: 0;
+    top: 5vh;
     left: 0;
     right: 0;
     transition: .3s all;
+    
+}
+.flechaABienvenida svg{
+    transform: rotate(180deg);
 }

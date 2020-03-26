@@ -1,308 +1,35 @@
-@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
-
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
-}
+    font-family: "Helvetica Neue";
+    src: url("../fonts/HELVET10.TTF");
+  }
 
  *  {
 box-sizing: border-box;
-    font-family: 'Helvetica neue', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
-nav{
-    z-index: 100000!important;
-}
-body{
-    /* background-image: url("../images/bgguay.jpg")!important; */
-    background-position: center;
-    /* background-repeat: no-repeat; */
-    background-size: 100%;
-}
-header.headerHome{
-    height: 100vh;
-    /* border-bottom: 1px solid black */
-}
-
-header.headerPoyecto{
-    height: 10vh;
-    /* border-bottom: 1px solid black */
-}
-
-
-.titleHero{
-font-size: 100px;
-}
-
-/* nav a{
-    color: #212529;
-    font-size: 40px;
-    transition: all .5s;
-} */
-
-.app1{
-    background-color: #212529;
-    min-height: 800px;
-    color: white;
-    
- }    
-
- .app2{
-    color: #212529;
-    min-height: 800px;
-    background-color: #fafafa;
- }   
-
- .app1 .textoApp h2{
-    font-size: 5rem;
-}
-
-@media(max-width: 768px){
-  
-}
-
- @media(max-width: 2768px){
-     section h2    {
-        color: red;
-     }
-    .aboutSection {
-        background-image: url("../images/DSC03603.jpg");
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position-x: 80%;
-    }
-
-    h1{
-        font-size: 4.5rem!important;
-    }
-
-    .app1 .textoApp h2{
-        font-size: 2rem;
-   }
-    .app1 .textoApp p{
-        display: none;
-    }
-
-    .navbar{
-        height: 60px;
-    }
-
-    .navbar-brand{
-        position: absolute;
-        color: #212529;
-        z-index: 110000;
-        padding-top: 1rem!important;
-        padding-bottom: 1rem!important;
-        padding-left: 1rem!important;
-    }
-
-    .navbar-toggler{
-        border:0!important;
-        outline: 0!important;
-    }
-    .titleHero{
-        font-size: 70px;
-    }
-    .siteName a{ 
-        color: #212529;
-     }
-     .nav-link{
-         font-size: 40px;
-     }
-     .navbar {
-        position: fixed!important;
-        right: 0!important;
-        z-index: 1;
-    }
-    .cuadrado{
-        width: 32px;
-        height: 32px;
-        background: black;
-    }
-    div#navbarSupportedContent{
-        background-color: rgba(255, 255, 255, 0.856);
-    }
-    .navbar-collapse{
-        height: 1400%;
-    }
-    .nav-link {
-        margin-top: 30px;
-    }
-    .navbar {
-        background: rgba(255, 255, 255, 0.856);
-    }
-    .aboutSection h2{
-        font-size: 100px;
-        font-weight: bold;;
-    }
-    .aboutSection {
-        /* background-size: 50%;
-        background-repeat: no-repeat;
-        background-position: right; */
-        min-height: 500px;
-    }
-    .workSection h2{
-        font-size: 100px;
-        font-weight: bold;
-    }
-    .works{
-        width: 100%;
-    }
-    .contactSection h2{
-        font-size: 100px;
-        font-weight: bold;
-        overflow-x: hidden;
-
-    }
-    .navbar-brand{
-        font-weight: bold;
-        letter-spacing: -1px;
-    }
-    .contactInput{
-        border: 0px  ;
-        border-bottom: 1px solid #212529 ;
-        height: 50px;
-        font-size: 40px;
-        outline: 0;
-        padding: 5px;
-    }
-
-    .contactTextarea{
-        border: 0px  ;
-        border-bottom: 1px solid #212529 ;
-        font-size: 40px;
-        outline: 0;
-        padding: 5px;
-    }
-    .sendInput{
-        font-size: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .sendInput:hover{
-        color:white;
-        background: black;
-        outline: 0;
-    }
-    .workSection h2 {
-        height: 70px;
-        z-index: 10000;
-        position: sticky;
-    }
-    .hideme{
-        opacity: 0;
-    }
-    .workSection .works h3 {
-        color: #212529;
-        font-weight: bold;
-        margin-top: -16px;
-        margin-bottom: 26px;
-    }
-    .navbar-nav{
-        margin-top: 140px!important;
-        margin-bottom: 400px!important;
-    }
-    .navbar-toggler{
-        padding: 20px!important;
-    }
-    .navbar-light .navbar-nav .nav-link{
-        color: rgba(0, 0, 0, 0.8);
-    }
-    .mainButton {
-        font-size: 1.7rem!important;
-    }
-    .navbar-brand:hover .logo{
-        position: absolute;
-        left: 70px;
-        top: 25px;
-        transition: all .3s;
-        opacity: 100;
-        color: #212529;
-    }
-    .navbar-brand .logo{
-        position: absolute;
-        left: -100px;
-        top: 25px;
-        transition: all .3s;
-        opacity: 0;
-        color: #212529;
-    }
-    .navbar-brand:hover .monkeyonkey{
-        font-size: 2rem;
-        transform: translateY(-100px);
-        transition: all .3s;
-    }
-    .navbar-brand .monkeyonkey{
-        transform: scale(1);
-        transition: all .3s;
-    }
-    .navbar-brand{
-        width: 100px;
-    }
-    
-}
-
-
-@media(min-width: 767px){
-    .containerDos {
-        max-width: 1100px;
-        margin: 0 auto!important;
-    }
-    .aboutSection{
-        min-height: 900px;
-    }
-    .menuDesktop {
-        position: fixed;
-        right: 20px;
-        padding: 20px 0;    
-        z-index: 1000;
-    }
-    .menuDesktop a {
-        color: #212529;
-    }
-    .menuDesktop a svg {
-        width: 32px;
-        height: 32px;
-    }
-}
-
-#eee1:hover {
-	animation: beat .35s infinite alternate;
-    transform-origin: center;
-}
-.copySection span{
-   margin: 0 10px;
-}
-
-.copySection {
+.centro{
     display: flex;
-    margin: auto;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.copySection .p1{
-    margin-left: auto;
+.altoCompleto{
+    height: 100vh;
 }
 
-.copySection .p2{
-    margin-right: auto;
+/*Navbar*/
+
+.navbar-brand{
+    font-weight: bold;
 }
 
-/* Heart beat animation */
-@keyframes beat{
-    to { font-size: 1.7rem;     
-        vertical-align: top;
-    }
+/*Bienvenida*/
+
+.textoBienvenida h2{
+    font-size: 70px;
 }
 
-.menuDesktop a{
-    text-decoration: none;
-}
-
-.menuDesktop a:hover{
-    fill: red;
-    color: red;
-}
-.no-bg{
-    background-image: none;
+.textoBienvenida p{
+    font-size: 25px;
 }

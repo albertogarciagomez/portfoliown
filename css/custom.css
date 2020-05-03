@@ -104,3 +104,25 @@
             width: 100%;
             height: 600px;
         }
+
+
+.linkedin-icon:hover {
+    fill: #0077b5;
+    transition: all .3s;
+}
+
+.linkedin-icon {
+    fill: #545454;
+    transition: all .3s;
+}
+
+.medium-icon:hover {
+    fill: #0e0e0e;
+
+    transition: all .3s;
+}
+
+.medium-icon {
+    fill: #545454;
+    transition: all .3s;
+}

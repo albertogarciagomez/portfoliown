@@ -26,6 +26,14 @@
         height: 100vh;
     }
 
+/* h1 */
+
+h1{
+    opacity: 0;
+    position: absolute;
+    font-size: 0px;
+}
+
 /*Navbar*/
     .navbar-brand{
         font-weight: bold;

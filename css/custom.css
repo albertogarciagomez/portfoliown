@@ -52,8 +52,8 @@ h1{
 
 /*container*/
     .arrow{
-        width: 40px; 
-        vertical-align: -17px;
+        width: 24px; 
+        fill: #212529;
     }
 
     .containerinfo{

@@ -134,3 +134,16 @@ h1{
     fill: #545454;
     transition: all .3s;
 }
+
+
+.botonContact{
+    padding: 3px 8px!important;
+    color: #17a2b8!important;
+    background-color: transparent!important;
+}
+
+.botonContact:hover{
+    padding: 3px 8px!important;
+    color: white!important;
+    background-color: #17a2b8!important;
+}

@@ -140,13 +140,13 @@ h1{
     padding: 1px 9px!important;
     color: #17a2b8!important;
     background-color: transparent!important;
-    transition: all .5;
+    transition: all .5s;
 }
 
 .botonContact:hover{
     padding: 1px 9px!important;
     color: white!important;
     background-color: #17a2b8!important;
-    transition: all .5;
+    transition: all .5s;
     transform: scale(1.1);
 }

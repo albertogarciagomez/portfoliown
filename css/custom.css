@@ -4,6 +4,24 @@
     font-family: 'Cormorant Garamond', serif;
     color: #fff;
 } */
+html {
+    scroll-behavior: smooth;
+  }
+
+  .enlaces-ancla a{
+    font-weight: 300;
+    color: #b9b9b9;
+    text-decoration: none;
+    transition: all .3s;
+
+}
+
+.enlaces-ancla a:hover{
+    font-weight: 600;
+    color: #fff;
+    transition: all .3s;
+}
+
 *{
     font-family: 'Poppins', sans-serif; 
     font-weight: 100;   

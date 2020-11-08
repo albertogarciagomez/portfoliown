@@ -38,6 +38,11 @@ body{
     background-color: #141414;
 }
 
+.navbar-alberto{
+    background-color: #141414;
+    
+}
+
 header{
     display: flex;
    height: 86px;  

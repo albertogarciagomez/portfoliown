@@ -50,7 +50,7 @@ header{
 .header p{
     font-size: 24px;
     font-weight: 600;
-    
+    margin: 0;
 }
 
  .contact-button:hover .first{
@@ -72,6 +72,12 @@ header{
     transition: all 1s;
 
     opacity: 0;
+}
+
+.contact-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .main h2{

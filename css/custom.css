@@ -16,7 +16,7 @@ html {
 
   .enlaces-ancla a{
     font-weight: 300;
-    color: #b9b9b9;
+    color: #e4e4e4;
     text-decoration: none;
     transition: all .3s;
 
@@ -24,14 +24,14 @@ html {
 
 .enlaces-ancla a:hover{
     font-weight: 600;
-    color: #fff;
+    color: #e4e4e4;
     transition: all .3s;
 }
 
 *{
     font-family: 'Poppins', sans-serif; 
     font-weight: 100;   
-    color: #fff;
+    color: #e4e4e4;
 }
 
 body{
@@ -108,12 +108,15 @@ header{
     
 }
 .proyecto{
-    width: 98%;
+    padding:200px 10px !important;
+    margin-top: 160px;
+    border: solid .5px #333;
     margin: 0 auto;
     /* margin-top: 100px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
 }
 
 
@@ -146,7 +149,6 @@ header{
     hr{
         border-color: #333;
         width: 50%;
-        margin-top: 100px;
         margin-bottom: 100px;
     }
     p{
@@ -194,7 +196,7 @@ header{
     }
 
     hr {
-        margin-top: 40px;
+
         margin-bottom: 40px;
     }
 

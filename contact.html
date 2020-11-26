@@ -21,6 +21,23 @@
 
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 
+    <style>
+        h3:hover svg {
+            height: 24px;
+            width: 24px;
+            transition: all .5s ease-in-out;
+            fill: white;
+            margin-right: 20px;
+        }
+
+        h3 svg {
+            margin-right: -20px;
+
+            height: 0px;
+            width: 0px;
+            transition: all .5s ease-in-out;
+        }
+    </style>
 
 </head>
 
@@ -37,7 +54,7 @@
             <div class="col-6 p-0 m-0 text-right contact-button">
                 <a href="./projects.html">
                     <strong class="hover">
-                        Proyectos 
+                        Proyectos
                     </strong>
                 </a>
             </div>
@@ -46,45 +63,46 @@
 
 
 
-    <div class="row w-100 m-0" style="padding-top: 100px;  display: flex; justify-content: center;
-    align-items: center;">
+    <div class="row w-100 m-0 " style="height: 100vh;  display: flex; justify-content: center; align-items: center;" data-aos="fade-up">
 
         <div class="w-100 text-center my-4 mx-auto">
 
-            <h2 style=" ">
-                Contactar
-            </h2>
+            <h5 style=" ">
+                Hola, soy Alberto.
+            </h5>
+            <h4 style=" ">
+                👇 CONTACTA CONMIGO 👇
+            </h4>
 
-            <p style="">
-                <a href="mailto:albertogarciagomez18@gmail.com" style="color: white; font-weight: 400;">
+
+            <h3 style="margin-top: 40px;">
+                <a href="mailto:albertogarciagomez18@gmail.com" class="d-flex"
+                    style="color: white; font-weight: 400; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.02c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 12.55l-5.992-4.57h11.983l-5.991 4.57zm0 1.288l-6-4.629v6.771h12v-6.771l-6 4.629z" />
+                        </svg>
+
+
                     albertogarciagomez18@gmail.com
                 </a>
-            </p>
+
+            </h3>
+
+            <h3 style="margin-top: 20px;">
+                <a href="tel:636396083" class="d-flex"
+                    style="color: white; font-weight: 400; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z" />
+                    </svg>
+                    +34 636 39 60 83
+                </a>
+            </h3>
         </div>
 
 
-        <form action="./welcome_get.php"  method="GET" style="width: 90%; max-width: 500px;">
-            <div class="col-12 d-block mb-3" style="justify-content: center; align-items: center;">
-                <label for="ContactName" class="col-12 p-0 m-0 my-1"> <strong> Nombre </strong></label>
-                <input type="text" name="nombre" id="ContactName" class="form-control col-12" placeholder="Tú nombre"
-                    style=" border-radius: 0; font-weight: 300; color: #CCC">
-            </div>
-            <div class="col-12 d-block mb-3" style="justify-content: center; align-items: center;">
-                <label for="ContactName" class="col-12 p-0 m-0 my-1"> <strong> E-Mail </strong></label>
-                <input type="email" name="email" id="ContactName" class="form-control col-12" placeholder="Tú e-mail"
-                    style="border-radius: 0; font-weight: 300; color: #CCC">
-            </div>
-            <div class="col-12 d-block mb-3" style="justify-content: center; align-items: center;">
-                <label for="message" class="col-12 p-0 m-0 my-1"> <strong> Mensaje </strong></label>
-                <textarea name="mensaje" id="" cols="30" rows="10" class="form-control col-12" placeholder="Tú mensaje"
-                    style="border-radius: 0; font-weight: 300; color: #CCC"></textarea>
-            </div>
-            <div class="col-12 d-flex mb-3" style="justify-content: center; align-items: center;">
-                <input type="submit" value="Enviar mensaje" class="btn col-12" style="background-color: #444; color: white; border-radius: 0; font-weight: 400; height: 40px;">                
-            </div>
-            
 
-        </form>
 
 
 

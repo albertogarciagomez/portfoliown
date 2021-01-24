@@ -39,14 +39,22 @@ html {
     color: #e4e4e4;
 }
 
+.marvel{
+    width: 300px;
+    text-align: center;
+    display: flex;
+    height: 472.5px;
+}
+
+
 body{
-    background-color: #141414;
+    /* background-color: #141414; */
+    background-color: transparent;
 }
 
 .navbar-alberto{
     background-color: #141414a9;
-    backdrop-filter: blur(2px);
-    backdrop-filter: saturate(0%);
+    backdrop-filter: blur(8px) saturate(0%);
 }
 
 header{
@@ -112,12 +120,12 @@ header{
 }
 
 .proyecto h3{
-    font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Cormorant Garamond', serif; */
     font-size: 60px;
     
 }
 .proyecto{
-    padding:80px 10px !important;
+    padding:100px 10px !important;
     margin-top: 160px;
     /* border: solid .5px #333; */
     margin: 0 auto;
@@ -167,15 +175,20 @@ header{
 
     .pre{
         margin: 0;
+        margin-bottom: 0!important;
     }
 
     .videovimeo{
-        padding:811px 0 0 0;position:relative; width: 100%; height: 100%; max-width: 1080px; margin: 0 auto;
+        padding:72% 0 0 0;position:relative; width: 100%; height: 100%; max-width: 1080px; margin: 0 auto;
         max-height: 470px;
         max-width: 675px;
     }
     h1{
         font-size: 20px;
+    }
+
+    .credits{
+        font-size: 12px;
     }
 
     @media screen and (max-width: 500px){
@@ -198,7 +211,7 @@ header{
         }
         
     .videovimeo{
-        padding:450px 0 0 0;
+        padding:72% 0 0 0;
         position:relative;
         width: 100%; 
         height: 100%; 
@@ -211,4 +224,38 @@ header{
         margin-bottom: 40px;
     }
 
+    }
+
+    html {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    html {
+    background-color: #141414;
+    /* background: red; */
+    transition: all 1s;
+
+    }
+    
+    html.scrolled {
+        background:#fafafa;
+        color: #141414!important;
+        transition: all 1s;
+    }
+
+    html.scrolled * {
+        color: #141414!important;
+
+    }
+
+    html.scrolled .navbar-alberto {
+        color: #141414!important;
+        background-color: #fafafa;
+        border: 0!important;
     }

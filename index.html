@@ -98,21 +98,21 @@
 
         .main-info-header {
             max-width: 700px;
-            text-align: center;
             width: 100%;
-            margin-bottom: -60px;
             z-index: 1;
+            position: absolute;
+            text-align: left;
         }
 
         .main-info-header div {
             width: 100%;
             max-width: 700px;
-            text-align: center;
+            text-align: left;
         }
 
         .photo-container-header {
             width: 100%;
-            text-align: center;
+            text-align: right;
         }
 
         .carousel-features {
@@ -395,6 +395,15 @@
         }
 
         @media screen and (max-width: 769px){
+            .photo-container-header {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+            .main-info-header{
+                position: relative;
+            }
+
             .link-about, .link-project{
                 display: none;
             }
@@ -482,7 +491,7 @@
             }
 
             .photo-container-header{
-                width: 90%;
+                width: 100%;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -503,6 +512,17 @@
             display: inline-block;
     position: absolute;
 }
+
+.inner-header-container {
+    width: 95%;
+}
+
+.start-container {
+    font-size: 50px;
+    margin-top: 32px;
+    color: #0b3e7d;
+    text-transform: uppercase;
+}
         
 
 
@@ -521,8 +541,8 @@
             </h1>
         </div>
         <div>
-            <a class="link-project" href="#projects" style="padding-right: 30px;">projects</a>
             <a class="link-about" href="#about" style="padding-right: 30px;">about</a>
+            <a class="link-project" href="#projects" style="padding-right: 30px;">projects</a>
             <a class="link-contact" href="#contact">contact</a>
         </div>
     </nav>
@@ -530,7 +550,8 @@
     <div class="header-first" >
         <div class="inner-header-container" data-aos="fade" data-aos-delay="1000">
             <div class="main-info-header">
-                <div>Product designer Front-End</div>
+                <div>Product designer <br> Front-End <br> Photo & Video </div>
+                <a href="#about" class="start-container">Comenzar &gt;&gt; </a>
             </div>
             <div class="photo-container-header">
                 <img src="./images/ownphoto.jpg" alt="">
@@ -659,6 +680,32 @@
 
                 <div class="video-responsive">
                     <iframe src="https://www.youtube.com/embed/CXmg6DbMSkw" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+            <div class="project" data-aos="fade-up">
+                <p>
+                    <span>Producción audiovisual -</span> Grupo Cosa de dos en el festival Jardín de las Delicias en Madrid.
+
+                </p>
+                
+
+                <div class="video-responsive">
+                    <iframe src="https://www.youtube.com/embed/ggide-PsES4" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+            <div class="project" data-aos="fade-up">
+                <p>
+                    <span>Producción audiovisual -</span> La tardecita en El callejón de Serrano en Madrid.
+
+                </p>
+                
+
+                <div class="video-responsive">
+                    <iframe src="https://www.youtube.com/embed/wFCScySVBNE" frameborder="0" allowfullscreen></iframe>
                 </div>
 
             </div>

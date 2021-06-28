@@ -16,25 +16,26 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <style>
         html {
-            font-family: Poppins;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background-color: #EAF4EC;
+            background-color: #fff;
             scroll-behavior: smooth;
         }
 
         body {
-            font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background-color: #EAF4EC;
+            background-color: #fff;
             position: relative;
         }
 
@@ -49,9 +50,8 @@
             z-index: 200;
             margin: 0;
             width: 100%;
-            mix-blend-mode: difference;
-            will-change: opacity;
-            color: white;
+            color: #323232;
+            background-color: #fff;
         }
 
         nav div {
@@ -60,17 +60,17 @@
 
         nav a {
             display: inline-block;
-            font-family: Poppins;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-style: normal;
-            font-weight: 600;
-            font-size: 32px;
+            font-weight: 400;
+            font-size: 16px;
             line-height: 48px;
             text-decoration: none;
             /* color: #010101; */
             display: inline-block;
             z-index: 200;
 
-            color: white;
+            color: #323232;
         }
 
         .header-first {
@@ -81,38 +81,36 @@
             align-items: center;
             color: #010101;
             font-weight: 600;
-            font-size: 80px;
-            line-height: 86px;
+            font-size: 32px;
+            line-height: 40px;
             text-align: center;
             position: relative;
         }
 
         .inner-header-container {
             height: 100%;
-            position: absolute;
             text-align: center;
             display: flex;
-            flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
 
         .main-info-header {
             max-width: 700px;
-            width: 100%;
             z-index: 1;
-            position: absolute;
             text-align: left;
         }
 
         .main-info-header div {
-            width: 100%;
-            max-width: 700px;
-            text-align: left;
         }
 
-        .photo-container-header {
-            width: 100%;
-            text-align: right;
+        .photo-container-header img {
+            border-radius: 1000000px!important;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+            margin-right: 40px;
         }
 
         .carousel-features {
@@ -123,17 +121,13 @@
             white-space: nowrap;
             overflow-x: hidden;
             width: 100%;
-            font-family: Poppins;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 80px;
             line-height: 120px;
-            letter-spacing: 0.045em;
             text-transform: uppercase;
-            /* color: #818181; */
-            mix-blend-mode: difference;
-            will-change: opacity;
-            color: white;
+            color: #323232;
             height: 120px;
             z-index: 100;
         }
@@ -155,20 +149,23 @@
         }
 
         .about-container {
-            background-color: #0F1C51;
-            height: 100vh;
+            background-color: #fff;
+            min-height: 100vh;
+            padding-top: 200px;
+            padding-bottom: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .welcome-container-text p {
-            color: white;
+        .welcome-container-text div {
+            color: #323232;
             font-size: 80px;
             line-height: 120px;
-            letter-spacing: 0.045em;
             margin: 0px;
             padding: 0px;
+            text-align: left;
+            margin-bottom: 32px;
         }
 
         .welcome-container-text span {
@@ -190,60 +187,53 @@
         .about-container-text {
             max-width: 481px;
             width: 100%;
-            margin-left: auto;
-            color: white;
+            
+            color: #323232;
         }
 
         .cv-container {
             margin-top: 40px;
-            font-family: Poppins;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-style: normal;
-            font-weight: bold;
+            font-weight: 600;
             font-size: 32px;
             line-height: 48px;
-            text-align: center;
-            letter-spacing: 0.045em;
-            text-decoration-line: underline;
-
+            text-align: left;
         }
 
         .cv-container a {
-            color: white;
+            color: #323232;
         }
 
         .projects-container {
             max-width: 842px;
             width: 100%;
-            margin: 0 auto
+            margin: 0 auto;
         }
 
         .main-title-container-text {
-            margin-top: -60px;
-            font-family: Poppins;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 100px;
             line-height: 108%;
-            /* identical to box height, or 108px */
-            mix-blend-mode: difference;
-            will-change: opacity;
-            color: white;
+            color: #979797;
             text-align: left;
         }
 
         .project {
-            font-family: Poppins;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-style: normal;
-            font-weight: 600;
-            font-size: 40px;
+            font-weight: 500;
+            font-size: 24px;
             line-height: 108%;
-            color: #010101;
+            color: #979797;
             margin-top: 100px;
-            margin-bottom: 200px;
+            margin-bottom: 400px;
         }
 
         .project span {
-            color: #868C87;
+            color: #323232;
         }
 
         .project iframe {
@@ -256,6 +246,7 @@
             height: 0;
             overflow: hidden;
             max-width: 100%;
+            margin-top: 60px
         }
 
         .embed-container iframe,
@@ -288,7 +279,7 @@
 
         .contact-container {
             height: 100vh;
-            background-color: #0F1C51;
+            background-color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -304,52 +295,60 @@
         }
 
         .main-contact-container-text {
-            font-family: Poppins;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 100px;
             line-height: 108%;
-            mix-blend-mode: difference;
-            will-change: opacity;
-            color: white;
+            color: #979797;
             text-align: left;
-            position: absolute;
-            top: -60px;
         }
 
         .main-container-text {
-            font-family: Poppins;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-style: normal;
             font-weight: 600;
-            font-size: 55px;
+            font-size: 32px;
             line-height: 108%;
-            color: white;
+            color: #323232;
         }
 
         .main-container-text a {
-            color: white;
+            color: #323232;
         }
 
+        a:hover {
+            opacity: .5;
+            transition: all .5 ease-in-out;
+        }
+
+        
+        a {
+            text-decoration: none;
+        }
+
+
         .second-container-text {
-            font-family: Poppins;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-style: normal;
             font-weight: 600;
-            font-size: 40px;
+            font-size: 32px;
             line-height: 108%;
+            color: #979797;
             /* or 43px */
         }
 
         .contact-container-text {
-            height: 100%;
+            min-height: 100vh;
             justify-content: center;
             display: flex;
             flex-direction: column;
-            color: white;
+            color: #323232;
         }
 
         .other-contact-container-text p a {
-            color: white;
-            font-family: Poppins;
+            color: #323232;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
@@ -359,7 +358,7 @@
         }
 
         .other-contact-container-text .other-title {
-            font-family: Poppins;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
@@ -371,12 +370,9 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            position: absolute;
             bottom: 0;
-            left: 0;            
-            mix-blend-mode: difference;
-            will-change: opacity;
-            color: white;
+            left: 0;           
+            color: #323232;
         }
 
         .footer span{
@@ -390,7 +386,8 @@
             font-weight: 600;
             font-size: 20px;
             line-height: 108%;
-            color: white;
+            color: #323232;
+            text-align: right;
 
         }
 
@@ -400,6 +397,22 @@
     margin: 0px;
     width: 100%;
 }
+.contact-container-text {
+            height: auto;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            color: #323232;
+        }
+
+
+.inner-contact-container {
+            max-width: 842px;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            min-height: 100vh;
+        }
             .main-info-header{
                 position: relative;
             }
@@ -417,10 +430,9 @@
 
             .main-title-container-text{
                 font-size: 40px;
-                margin-top: -20px;
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                padding-left: 16px;
+                text-align: left;
             }
             .project{
                 font-size: 20px;
@@ -434,12 +446,25 @@
                 width: 90%;
                 margin-left: auto;
                 margin-right: auto;
-                
             }
 
             .welcome-container-text{
                 margin-bottom: 20px;
             }
+            .welcome-container-text div {
+            color: #323232;
+            font-size: 32px;
+            line-height: 120px;
+            margin: 0px;
+            padding: 0px;
+            text-align: left;
+            margin-bottom: 32px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        .cv-container{
+            text-align: center;
+        }
 
             .about-container-text p{
                 font-size: 20px;
@@ -456,7 +481,6 @@
             .main-contact-container-text{
                 font-size: 60px;
                 line-height: 108%;
-                top: -30px;
                 width: 90%;
                 margin-left: auto;
                 margin-right: auto;
@@ -499,10 +523,8 @@
                 width: 100%;
             }
             .main-contact-container-text {
-                width: 100%;
-                justify-content: center;
-                align-items: center;
                 display: flex;
+                margin-bottom: 60px;
             }
         }
 
@@ -518,8 +540,8 @@
 }
 
 .start-container {
-    font-size: 50px;
-    margin-top: 32px;
+    font-size: 32px;
+    line-height: 80px;
     color: #0b3e7d;
     text-transform: uppercase;
 }
@@ -541,20 +563,20 @@
             </h1>
         </div>
         <div>
-            <a class="link-about" href="#about" style="padding-right: 30px;">about</a>
-            <a class="link-project" href="#projects" style="padding-right: 30px;">projects</a>
-            <a class="link-contact" href="#contact">contact</a>
+            <a class="link-about" href="#about" style="padding-right: 30px;">Sobre mí</a>
+            <a class="link-project" href="#projects" style="padding-right: 30px;">Proyectos</a>
+            <a class="link-contact" href="#contact">Contactar</a>
         </div>
     </nav>
 
     <div class="header-first" >
         <div class="inner-header-container" data-aos="fade" data-aos-delay="1000">
-            <div class="main-info-header">
-                <div>Product designer <br> Front-End <br> Photo & Video </div>
-                <a href="#about" class="start-container">Comenzar &gt;&gt; </a>
-            </div>
             <div class="photo-container-header">
                 <img src="./images/ownphoto.jpg" alt="">
+            </div>
+            <div class="main-info-header">
+                <div>UX/UI Designer <br> Front-End <br> Photo & Video </div>
+                
             </div>
         </div>
         <div class="carousel-features"  data-aos="fade" data-aos-delay="1000">
@@ -597,21 +619,21 @@
         <div class="inner-about-container">
             <div class="welcome-container-text" data-aos="fade-up">
                 <div>
-                    <p>¡Hola,</p>
-                    <p>Soy <span>Alberto!</span></p>
+                    
+                     ¡Hola, Soy Alberto!
                 </div>
             </div>
             <div class="about-container-text" data-aos="fade-up">
                 <div>
                     <p>
                         Soy un chico de 24 años apasionado del mundo digital y la fotografía residiendo en Madrid.
-                        Cuento con experiencia en diseño UX/UI. También tengo un largo recorrido como desarrollador Front-End en web y app.
+                        Cuento con experiencia en diseño UX/UI y como desarrollador Front-End en web y app.
                     </p>
                 </div>
             </div>
             <div class="cv-container" data-aos="fade-up">
                 <div>
-                    <a href="./CVAlbertoGarcia.pdf" target="_blank" download> Ver Curriculum </a>
+                    <a href="./CVAlbertoGarcia.pdf" target="_blank" download> Ver Curriculum -> </a>
                 </div>
             </div>
         </div>
